@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Малянова Екатерина](https://up.htmlacademy.ru/adaptive/16/user/782031).
-* Наставник: `Неизвестно`.
+* Наставник: [Алексей Зольников](https://htmlacademy.ru/profile/id870391).
 
 ---
 
