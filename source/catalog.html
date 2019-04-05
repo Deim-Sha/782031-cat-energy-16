@@ -8,41 +8,42 @@
 
 <body>
   <header class="page-header">
-    <a class="page-header__logo" href="index.html">
-      <img class="page-header__logo-image" src="http://placehold.it/33x38" width="33" height="38"
-        alt="Логотип Кэт энерджи">
-    </a>
-    <a class="page-header__logo" href="index.html">
-      <img class="page-header__brand-name" src="http://placehold.it/101x18" width="101" height="18"
-        alt="Логотип Кэт энерджи">
-    </a>
     <nav class="main-nav">
-      <div class="main-nav__wrap">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item site-list__item--active">
-            <a>Каталог продукции</a>
-          </li>
-          <li class="site-list__item">
-            <a href="form.html">Подбор программы</a>
-          </li>
-        </ul>
-      </div>
+      <a class="main-nav__logo" href="index.html">
+        <img class="main-nav__logo-image" src="http://placehold.it/33x38" width="33" height="38"
+          alt="Логотип Кэт Энерджи">
+        <img class="main-nav__logo-name" src="http://placehold.it/101x18" width="101" height="18" alt="Кэт Энерджи">
+      </a>
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a href="index.html">Главная</a>
+        </li>
+        <li class="site-list__item site-list__item--active">
+          <a>Каталог продукции</a>
+        </li>
+        <li class="site-list__item">
+          <a href="form.html">Подбор программы</a>
+        </li>
+      </ul>
     </nav>
   </header>
 
   <main class="page-main">
-    <h1 class="page-main__title page-main__title--inner">Каталог продукции</h1>
+    <h1 class="page-main__title-inner">Каталог продукции</h1>
     <section class="catalog">
       <h2 class="visually-hidden">Каталог товаров</h2>
       <ul class="catalog__list">
         <li class="catalog__item">
-          <h3 class="catalog__title">Cat Energy Pro 500 г</h3>
-          <img class="catalog__item-image" src="http://placehold.it/140x144" width="140" height="144"
-            alt="Cat Energy Pro 500 г с курицей">
+          <a class="catalog__link-item" href="#">
+            <h3 class="catalog__item-title">Cat Energy Pro 500 г</h3>
+          </a>
+          <a class="catalog__link-image" href="#">
+            <img class="catalog__item-image" src="http://placehold.it/140x144" width="140" height="144"
+              alt="Cat Energy Pro 500 г с курицей">
+          </a>
           <table class="catalog__table">
             <tr class="catalog__table-row">
               <td class="catalog__table-title">Объем</td>
@@ -60,9 +61,13 @@
           <button class="catalog__order-button button" type="button">Заказать</button>
         </li>
         <li class="catalog__item">
-          <h3 class="catalog__title">Cat Energy Pro 1000 г</h3>
-          <img class="catalog__item-image" src="http://placehold.it/140x144" width="140" height="144"
-            alt="Cat Energy Pro 1000 г с курицей">
+          <a class="catalog__link-item" href="#">
+            <h3 class="catalog__item-title">Cat Energy Pro 1000 г</h3>
+          </a>
+          <a class="catalog__link-image" href="#">
+            <img class="catalog__item-image" src="http://placehold.it/140x144" width="140" height="144"
+              alt="Cat Energy Pro 1000 г с курицей">
+          </a>
           <table class="catalog__table">
             <tr class="catalog__table-row">
               <td class="catalog__table-title">Объем</td>
@@ -80,9 +85,13 @@
           <button class="catalog__order-button button" type="button">Заказать</button>
         </li>
         <li class="catalog__item">
-          <h3 class="catalog__title">Cat Energy Pro 500 г</h3>
-          <img class="catalog__item-image" src="http://placehold.it/140x144" width="140" height="144"
-            alt="Cat Energy Pro 500 г с рыбой">
+          <a class="catalog__link-item" href="#">
+            <h3 class="catalog__item-title">Cat Energy Pro 500 г</h3>
+          </a>
+          <a class="catalog__link-image" href="#">
+            <img class="catalog__item-image" src="http://placehold.it/140x144" width="140" height="144"
+              alt="Cat Energy Pro 500 г с рыбой">
+          </a>
           <table class="catalog__table">
             <tr class="catalog__table-row">
               <td class="catalog__table-title">Объем</td>
@@ -100,9 +109,13 @@
           <button class="catalog__order-button button" type="button">Заказать</button>
         </li>
         <li class="catalog__item">
-          <h3 class="catalog__title">Cat Energy Pro 1000 г</h3>
-          <img class="catalog__item-image" src="http://placehold.it/140x144" width="140" height="144"
-            alt="Cat Energy Pro 1000 г с рыбой">
+          <a class="catalog__link-item" href="#">
+            <h3 class="catalog__item-title">Cat Energy Pro 1000 г</h3>
+          </a>
+          <a class="catalog__link-image" href="#">
+            <img class="catalog__item-image" src="http://placehold.it/140x144" width="140" height="144"
+              alt="Cat Energy Pro 1000 г с рыбой">
+          </a>
           <table class="catalog__table">
             <tr class="catalog__table-row">
               <td class="catalog__table-title">Объем</td>
@@ -120,9 +133,13 @@
           <button class="catalog__order-button button" type="button">Заказать</button>
         </li>
         <li class="catalog__item">
-          <h3 class="catalog__title">Cat Energy Slim 500 г</h3>
-          <img class="catalog__item-image" src="http://placehold.it/140x144" width="140" height="144"
-            alt="Cat Energy Pro 1000 г с гречкой">
+          <a class="catalog__link-item" href="#">
+            <h3 class="catalog__item-title">Cat Energy Slim 500 г</h3>
+          </a>
+          <a class="catalog__link-image" href="#">
+            <img class="catalog__item-image" src="http://placehold.it/140x144" width="140" height="144"
+              alt="Cat Energy Pro 1000 г с гречкой">
+          </a>
           <table class="catalog__table">
             <tr class="catalog__table-row">
               <td class="catalog__table-title">Объем</td>
@@ -140,9 +157,13 @@
           <button class="catalog__order-button button" type="button">Заказать</button>
         </li>
         <li class="catalog__item">
-          <h3 class="catalog__title">Cat Energy Slim 1000 г</h3>
-          <img class="catalog__item-image" src="http://placehold.it/140x144" width="140" height="144"
-            alt="Cat Energy Pro 1000 г с гречкой">
+          <a class="catalog__link-item" href="#">
+            <h3 class="catalog__item-title">Cat Energy Slim 1000 г</h3>
+          </a>
+          <a class="catalog__link-image" href="#">
+            <img class="catalog__item-image" src="http://placehold.it/140x144" width="140" height="144"
+              alt="Cat Energy Pro 1000 г с гречкой">
+          </a>
           <table class="catalog__table">
             <tr class="catalog__table-row">
               <td class="catalog__table-title">Объем</td>
@@ -160,9 +181,13 @@
           <button class="catalog__order-button button" type="button">Заказать</button>
         </li>
         <li class="catalog__item">
-          <h3 class="catalog__title">Cat Energy Slim 500 г</h3>
-          <img class="catalog__item-image" src="http://placehold.it/140x144" width="140" height="144"
-            alt="Cat Energy Pro 1000 г с рисом">
+          <a class="catalog__link-item" href="#">
+            <h3 class="catalog__item-title">Cat Energy Slim 500 г</h3>
+          </a>
+          <a class="catalog__link-image" href="#">
+            <img class="catalog__item-image" src="http://placehold.it/140x144" width="140" height="144"
+              alt="Cat Energy Pro 500 г с рисом">
+          </a>
           <table class="catalog__table">
             <tr class="catalog__table-row">
               <td class="catalog__table-title">Объем</td>
@@ -179,7 +204,6 @@
           </table>
           <button class="catalog__order-button button" type="button">Заказать</button>
         </li>
-        </li>
       </ul>
       <div class="catalog__all">
         <p class="catalog__all-title">Показать еще 100500 товаров</p>
@@ -192,8 +216,7 @@
 
   <footer class="page-footer">
     <a class="page-footer__logo" href="index.html">
-      <img class="page-footer__brand-name" src="http://placehold.it/128x24" width="128" height="24"
-        alt="Логотип Кэт энерджи">
+      <img class="page-footer__logo-name" src="http://placehold.it/128x24" width="128" height="24" alt="Кэт энерджи">
     </a>
     <ul class="page-footer__list social-list">
       <li class="social-list__item">
