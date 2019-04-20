@@ -1,0 +1,13 @@
+.advantages__list {
+  @include list;
+}
+
+.advantages__intro {
+  font-size: 36px;
+  line-height: 60px;
+}
+
+.advantages__item {
+  font-family: $arial;
+  color: $gray;
+}

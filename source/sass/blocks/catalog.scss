@@ -1,0 +1,42 @@
+.catalog__list {
+  @include list;
+}
+
+.catalog__item-title {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $dark-gray;
+  text-transform: uppercase;
+}
+
+.catalog__table,
+.catalog__all-description {
+  font-family: $arial;
+  font-size: 12px;
+  line-height: 16px;
+  color: $gray;
+}
+
+.catalog__order-button {
+  font-size: 16px;
+  line-height: 20px;
+  color: $white;
+
+  background-color: $bg-green;
+}
+
+.catalog__all {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.catalog__all-title {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.catalog__all-button {
+  background-color: $bg-gray;
+}

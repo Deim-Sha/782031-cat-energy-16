@@ -1,0 +1,29 @@
+.social-list {
+  display: flex;
+
+  @include list;
+}
+
+.social-list__link {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social-list__link--vk {
+  width: 22px;
+  height: 12px;
+  background-image: url("../img/icon-vk-mobile.svg");
+}
+
+.social-list__link--instagram {
+  width: 16px;
+  height: 16px;
+  background-image: url("../img/icon-insta-mobile.svg");
+}
+
+.social-list__link--fb {
+  width: 10px;
+  height: 19px;
+  background-image: url("../img/icon-fb-mobile.svg");
+}
