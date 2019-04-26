@@ -1,24 +1,37 @@
-.page-main__wrap {
-  background-color: $bg-green;
-  background-image:
-    url("../img/index-background-mobile@1x.jpg"),
-    url("../img/index-can-mobile@1x.png");
-  background-position: top center;
-  background-repeat: no-repeat;
+.page-main__header {
+  margin-bottom: 20px;
+  /* Временно для сетки */
+  min-height: 480px;
+}
+
+.page-main__wrapper {
+  background:
+    url("../img/index-can-mobile@1x.png") bottom center no-repeat,
+    url("../img/index-background-mobile@1x.jpg") top center no-repeat;
+
+  /* Временно для сетки */
+  min-height: 440px;
 }
 
 .page-main__title {
+  margin: 0 auto;
+  width: 280px;
+
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
   color: $white;
+  text-align: center;
 }
 
 .page-main__slogan {
+  margin: 0;
+
   font-size: 14px;
   line-height: 14px;
   color: $white;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .page-main__title-inner {
@@ -28,7 +41,83 @@
 }
 
 .page-main__link {
+  display: block;
+  width: 280px;
+  margin: 0 auto;
+  padding: 10px 0;
+
   color: $white;
 
   background-color: $bg-green;
+}
+
+@media (min-width: $tablet) {
+  .page-main__header {
+    width: 708px;
+    margin: 0 auto;
+    padding: 0 30px;
+
+    background: url("../img/index-can-tablet@1x.jpg") bottom center no-repeat;
+
+    /* Временно для сетки */
+    min-height: 810px;
+  }
+
+  .page-main__wrapper {
+    width: 425px;
+    margin-left: 90px;
+    margin-bottom: 50px;
+
+    background: none;
+
+    /* Временно для сетки */
+    min-height: 180px;
+  }
+
+  .page-main__title {
+    width: 425px;
+    margin: 0;
+
+    font-size: 60px;
+    line-height: 60px;
+    color: $dark-gray;
+    text-align: left;
+  }
+
+  .page-main__slogan {
+    font-size: 20px;
+    line-height: 20px;
+    color: $dark-gray;
+    text-align: left;
+  }
+
+  .page-main__link {
+    margin: 0;
+    margin-left: 90px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .page-main__header {
+    min-width: 1440px;
+    margin-bottom: 80px;
+    margin-top: -225px;
+    padding: 0;
+
+    background:
+      url("../img/index-can-desktop@1x.png") 560px 140px no-repeat,
+      url("../img/index-background-desktop@1x.jpg") right top no-repeat;
+
+    /* Временно для сетки */
+    min-height: 695px;
+  }
+
+  .page-main__wrapper,
+  .page-main__link {
+    margin-left: 190px;
+  }
+
+  .page-main__title {
+    padding-top: 225px;
+  }
 }

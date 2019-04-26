@@ -1,4 +1,38 @@
 .page-footer {
-  padding-top: 40px;
   background-color: $bg-gray;
+}
+
+.page-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 35px;
+  padding-bottom: 20px;
+}
+
+.page-footer__logo {
+  margin-bottom: 30px;
+}
+
+.page-footer__list {
+  @include list;
+  margin-bottom: 20px;
+}
+
+@media (min-width: $tablet) {
+  .page-footer__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 55px;
+    padding-bottom: 60px;
+  }
+
+  .page-footer__logo {
+    margin-bottom: 0;
+    width: 150px;
+  }
+
+  .page-footer__list {
+    margin-bottom: 0;
+  }
 }
