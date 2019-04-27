@@ -47,19 +47,31 @@ body > * > * > * > * {
   outline-offset: -3px;
 }
 
-.layout {
+.layout-index {
   min-height: 1185px;
 }
 
+.layout-catalog {
+  min-height: 1440px;
+}
+
 @media (min-width: $tablet) {
-  .layout {
+  .layout-index {
     min-height: 1680px;
+  }
+
+  .layout-catalog {
+    min-height: 1615px;
   }
 }
 
 @media (min-width: $desktop) {
-  .layout {
-    min-height: 1070px;
+  .layout-index {
+    min-height: 1065px;
+  }
+
+  .layout-catalog {
+    min-height: 890px;
   }
 }
 /* Временно для сетки */

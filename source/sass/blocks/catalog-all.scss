@@ -1,0 +1,31 @@
+.catalog-all {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.catalog-all__title {
+  margin: 0;
+
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.catalog-all__description {
+  margin: 0;
+
+  font-family: $arial;
+  font-size: 12px;
+  line-height: 16px;
+  color: $gray;
+}
+
+.catalog-all__button {
+  background-color: $bg-gray;
+}
+
+@media (min-width: $tablet) {
+  .catalog-all {
+    padding: 0;
+  }
+}

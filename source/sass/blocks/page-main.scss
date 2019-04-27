@@ -35,6 +35,9 @@
 }
 
 .page-main__title-inner {
+  margin-bottom: 25px;
+  padding-top: 15px;
+
   font-size: 36px;
   line-height: 60px;
   font-weight: 400;
@@ -84,6 +87,13 @@
     text-align: left;
   }
 
+  .page-main__title-inner {
+    margin-bottom: 160px;
+    padding-top: 0;
+
+    font-size: 60px;
+  }
+
   .page-main__slogan {
     font-size: 20px;
     line-height: 20px;
@@ -101,7 +111,7 @@
   .page-main__header {
     min-width: 1440px;
     margin-bottom: 80px;
-    margin-top: -225px;
+    margin-top: -185px;
     padding: 0;
 
     background:
@@ -118,6 +128,6 @@
   }
 
   .page-main__title {
-    padding-top: 225px;
+    padding-top: 220px;
   }
 }
