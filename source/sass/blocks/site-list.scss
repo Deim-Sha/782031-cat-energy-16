@@ -1,11 +1,38 @@
 .site-list {
-  @include list;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 320px;
+
+  /* Временно для сетки */
+  min-height: 200px;
 }
 
-.site-list a {
+.site-list__item a {
   font-size: 20px;
   line-height: 20px;
   font-weight: 500;
   color: $dark-gray;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet) {
+  .site-list {
+    flex-direction: row;
+    align-items: flex-end;
+    width: 450px;
+
+    /* Временно для сетки */
+    min-height: 85px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .site-list {
+    width: 485px;
+
+    /* Временно для сетки */
+    min-height: 115px;
+  }
 }

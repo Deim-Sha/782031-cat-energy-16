@@ -1,6 +1,19 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 280px;
+}
+
 .copyright__link {
   font-family: $arial;
   color: $gray;
   font-size: 16px;
   line-height: 16px;
+}
+
+@media (min-width: $tablet) {
+  .copyright {
+    width: 165px;
+  }
 }

@@ -1,8 +1,17 @@
+.programs {
+  margin-bottom: 20px;
+
+  /* Временно для сетки */
+  min-height: 550px;
+}
+
 .programs__list {
   @include list;
 }
 
 .programs__title {
+  margin: 0;
+
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;
@@ -19,4 +28,59 @@
   line-height: 16px;
   color: $dark-gray;
   text-transform: uppercase;
+}
+
+.programs__item {
+  background-color: $bg-gray;
+
+  /* Временно для сетки */
+  min-height: 265px;
+}
+
+.programs__item:first-child {
+  margin-bottom: 20px;
+}
+
+@media (min-width: $tablet) {
+  .programs {
+    margin-bottom: 45px;
+
+    /* Временно для сетки */
+    min-height: 775px;
+  }
+
+  .programs__item {
+    /* Временно для сетки */
+    min-height: 370px;
+  }
+
+  .programs__item:first-child {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .programs {
+    margin-bottom: 70px;
+
+    /* Временно для сетки */
+    min-height: 375px;
+  }
+
+  .programs__list {
+    display: flex;
+    justify-content: center;
+  }
+
+  .programs__item {
+    width: 570px;
+
+    /* Временно для сетки */
+    min-height: 370px;
+  }
+
+  .programs__item:first-child {
+    margin-bottom: 0;
+    margin-right: 80px;
+  }
 }

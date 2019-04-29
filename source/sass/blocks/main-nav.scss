@@ -1,0 +1,61 @@
+.main-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* Временно для сетки */
+  min-height: 265px;
+}
+
+.main-nav__wrapper {
+  display: flex;
+  width: 280px;
+
+  /* Временно для сетки */
+  min-height: 65px;
+}
+
+.main-nav__list {
+  @include list;
+}
+
+@media (min-width: $tablet) {
+  .main-nav {
+    flex-direction: row;
+    justify-content: space-between;
+
+    /* Временно для сетки */
+    min-height: 85px;
+  }
+
+  .main-nav__wrapper {
+    align-items: flex-end;
+    width: 173px;
+    margin: 0;
+
+    /* Временно для сетки */
+    min-height: 85px;
+  }
+
+  .main-nav__logo-name {
+    display: none;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop) {
+  .main-nav {
+    /* Временно для сетки */
+    min-height: 115px;
+  }
+
+  .main-nav__wrapper {
+    width: 202px;
+
+    /* Временно для сетки */
+    min-height: 115px;
+  }
+}
